@@ -1,0 +1,121 @@
+@import url(fontawesome.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /* background-color: #000; */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 120px;
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: #162239;
+    box-shadow: 0px 0px 20px #8b913b49;
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    position: absolute;
+    height: 100%;
+  
+    /* border: 2px solid red; */
+}
+
+.logo img {
+    height: 17vh;
+}
+
+.logo a {
+    color: white;
+
+}
+
+.logo em {
+    color: #f5a425;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+/* section  */
+.main {
+    background-image: url(/assets/images/courses-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.main h1{
+    position: relative;
+    /* left: 20px; */
+    /* top: 30px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
+}
+.heading{
+    max-width: 300px;
+    position: relative;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    left: 30px;
+    top: 20px;
+}
+.main h1::before{
+    content: '';
+    position: absolute;
+   background-image: url(/assets/images/courses-bg.jpg);
+   /* background-color: red; */
+    height: 60px;
+    width: 0px;
+    animation: wipe 1.4s  1s 1 both alternate-reverse;
+}
+@keyframes wipe{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    header{
+        font-size: 2rem;
+        height: 90px;
+    }
+    .logo img{
+        height: 10vh;
+    }
+}

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-image: url(/assets/images/courses-bg.jpg);
+
+    padding: 0;
+}
+
+#santa {
+    height: 200vh;
+    background-image: url(/assets/images/courses-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.wrap img {
+    /* aspect-ratio: 20/25; */
+    height: 150px;
+    width: 150px;
+}
+
+#santa h1 {
+    font-size: 2rem;
+    position: relative;
+    left: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
