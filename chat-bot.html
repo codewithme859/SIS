@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΛΉMΛD</title>
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+</head>
+<body>
+    <div class="main">
+        <video id="mainVideo" autoplay muted>
+            <source src="Fonts/interface.mp4" type="video/mp4">
+        </video>
+        <audio id="myAudio" autoplay src="Fonts/a1.mp3"></audio>
+    </div>
+    <div class="main2" style="display: none;" >
+        <video id="main2Video" autoplay muted loop >
+            <source src="Fonts/interface2.mp4" type="video/mp4"> 
+        </video>
+        <div class="container">
+            <div class="navbar">
+                ΛΉMΛD
+            </div>
+            <div class="chat">
+
+            </div>
+        </div>
+    </div>
+
+     <script>
+        // Get the video elements
+        var mainVideo = document.getElementById('mainVideo');
+        var main2Video = document.getElementById('main2Video');
+        var mainDiv = document.querySelector('.main');
+        var main2Div = document.querySelector('.main2');
+
+        // Add an event listener for when the main video ends
+        mainVideo.addEventListener('ended', function() {
+            // Hide the main video div
+            mainDiv.style.display = 'none';
+            // Show the main2 video div
+            main2Div.style.display = 'block';
+            // Play the main2 video
+            main2Video.play();
+        });
+    </script> 
+</body>
+</html>
